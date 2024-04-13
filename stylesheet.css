@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(10, 10, 10, 0.616);
   color: #fff;
 }
 #header {
@@ -83,4 +83,84 @@ nav ul li a:hover::after {
 
 .header-text span {
   color: #8c52ffe5;
+}
+
+/* About Style */
+#about {
+  padding: 80px 0;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex-basis: 35%;
+}
+
+.col-1 img {
+  width: 100%;
+  border-radius: 45%;
+}
+
+.col-2 {
+  flex-basis: 60%;
+  text-align: justify;
+}
+
+.col-2 h1 {
+  color: #fff;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-title {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-title::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #611b84;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+.tab-title.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.tab-contents ul li span {
+  color: #611b84;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
 }
