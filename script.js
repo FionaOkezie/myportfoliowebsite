@@ -22,8 +22,10 @@
 // Get all elements with class "tab-title" and store them in the variable "tabtitles"
 const tabtitles = document.querySelectorAll(".tab-title");
 
+
 // Define a function named "opentab" that takes one parameter named "tabname"
 function opentab(tabname) {
+    console.log("opentab called with tabname:", tabname);
     // Remove the class "active-link" from all elements with class "tab-title"
     tabtitles.forEach(tabtitle => tabtitle.classList.remove("active-link"));
 
@@ -47,5 +49,31 @@ tabtitles.forEach(tabtitle => {
     tabtitle.addEventListener("click", function() {
         const tabname = this.getAttribute("data-tab");
         opentab.call(this, tabname);
+    });
+});
+
+const projecttitles = document.querySelectorAll(".project-title");
+
+function openproject(project){
+
+    projecttitles.forEach(projecttitle => projecttitle.classList.remove("active-link"));
+
+    const projectlists = document.querySelectorAll(".project-lists");
+    projectlists.forEach(projectlist => projectlist.classList.remove("active-list"));
+
+    this.classList.add("active-link");
+
+    const projectContent = document.getElementById(project);
+    if (projectContent) {
+        projectContent.classList.add("active-list");
+    }
+
+}
+
+projecttitles.forEach(projecttitle => {
+
+    projecttitle.addEventListener("click", function() {
+        const titlename = this.getAttribute("data-tab");
+        openproject.call(this, titlename);
     });
 });
