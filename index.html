@@ -1,229 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiona Okezie</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script
+      src="https://kit.fontawesome.com/8e55f5c556.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fiona Okezie</title>
-  <link rel="stylesheet" href="stylesheet.css" />
-  <script src="https://kit.fontawesome.com/8e55f5c556.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
 
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/logo.png" alt class="logo" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-        <p>Software & Network Engineer</p>
-        <h1>Hi, I'm <span>Fiona</span><br />Okezie From Nigeria.</h1>
-        <h3>This is my Portfolio Website!!!</h3>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Software & Network Engineer</p>
+          <h1>Hi, I'm <span>Fiona</span><br />Okezie From Nigeria.</h1>
+          <h3>This is my Portfolio Website!!!</h3>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- About Me Page -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-1">
-          <img src="images/pics.png" />
+    <!-- About Me Page -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="images/pics.png" />
+          </div>
+          <div class="col-2">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              magnam accusamus corporis. Dolores, veniam consectetur et quae
+              omnis officia voluptatum animi odit unde neque rerum. Unde ipsum
+              ducimus vitae dolores voluptatem perferendis nihil magnam odit.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-title active-title" data-tab="skills">Skills</p>
+              <p class="tab-title" data-tab="education">Education</p>
+              <p class="tab-title" data-tab="experience">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Desgining Website Interface
+                </li>
+                <li>
+                  <span>RAN Optimizer</span><br />Optimizing LTE and 5G Networks
+                </li>
+                <li>
+                  <span>Data Analyst</span><br />Analyzing and Visualizing
+                  Dataset
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 – Date</span><br />M.ASc. Software Engineering -
+                  Memorial University Of Newfoundland
+                </li>
+                <li>
+                  <span>2018 – 2020</span><br />M.Sc. Computer Science -
+                  Covenant University
+                </li>
+                <li>
+                  <span>2012 – 2016</span><br />B.Sc. Computer Science -
+                  University of Nigeria, Nsukka
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>October 2020 - August 2023</span><br />RAN Optimization
+                  Engineer - LM Ericsson Nigeria
+                </li>
+                <li>
+                  <span>October 2019 - September 2020</span><br />Graduate
+                  Trainee at LM Ericsson Nigeria
+                </li>
+                <li>
+                  <span>June 2017 - April 2018</span><br />Data Processing
+                  Officer at Kwara State Ministry of Education
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-2">
-          <h1>About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            magnam accusamus corporis. Dolores, veniam consectetur et quae
-            omnis officia voluptatum animi odit unde neque rerum. Unde ipsum
-            ducimus vitae dolores voluptatem perferendis nihil magnam odit.
+      </div>
+    </div>
+
+    <!-- Portfolio Page -->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-heading">Portfolio Project</h1>
+        <div class="project-titles">
+          <p class="project-title active-link" data-tab="html/css">
+            HTML & CSS
           </p>
-
-          <div class="tab-titles">
-            <p class="tab-title active-title" data-tab="skills">Skills</p>
-            <p class="tab-title" data-tab="education">Education</p>
-            <p class="tab-title" data-tab="experience">Experience</p>
+          <p class="project-title" data-tab="javascript">JavaScript</p>
+          <p class="project-title" data-tab="react">React</p>
+        </div>
+        <div class="project-lists active-list" id="html/css">
+          <div class="project-list">
+            <img src="images/portfolio-item4.jpg" alt />
+            <div class="action">
+              <h3>Portfolio Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
           </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li>
-                <span>Web Development</span><br />Desgining Website Interface
-              </li>
-              <li>
-                <span>RAN Optimizer</span><br />Optimizing LTE and 5G Networks
-              </li>
-              <li>
-                <span>Data Analyst</span><br />Analyzing and Visualizing
-                Dataset
-              </li>
-            </ul>
+          <div class="project-list">
+            <img src="images/portfolio-item5.png" alt />
+            <div class="action">
+              <h3>Creative Web Demo</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
           </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li>
-                <span>2023 – Date</span><br />M.ASc. Software Engineering -
-                Memorial University Of Newfoundland
-              </li>
-              <li>
-                <span>2018 – 2020</span><br />M.Sc. Computer Science -
-                Covenant University
-              </li>
-              <li>
-                <span>2012 – 2016</span><br />B.Sc. Computer Science -
-                University of Nigeria, Nsukka
-              </li>
-            </ul>
+          <div class="project-list">
+            <img src="images/portfolio-item3.jpg" alt />
+            <div class="action">
+              <h3>Ecommerce Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
           </div>
+        </div>
 
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li>
-                <span>October 2020 - August 2023</span><br />RAN Optimization
-                Engineer - LM Ericsson Nigeria
-              </li>
-              <li>
-                <span>October 2019 - September 2020</span><br />Graduate
-                Trainee at LM Ericsson Nigeria
-              </li>
-              <li>
-                <span>June 2017 - April 2018</span><br />Data Processing
-                Officer at Kwara State Ministry of Education
-              </li>
-            </ul>
+        <div class="project-lists" id="javascript">
+          <div class="project-list">
+            <img src="images/002.png" alt />
+            <div class="action">
+              <h3>Coming Soon</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-list">
+            <img src="images/002.png" alt />
+            <div class="action">
+              <h3>Coming Soon</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-list">
+            <img src="images/002.png" alt />
+            <div class="action">
+              <h3>Coming Soon</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-lists" id="react">
+          <div class="project-list">
+            <img src="images/portfolio-item1.jpg" alt />
+            <div class="action">
+              <h3>Sign Up Page</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-list">
+            <img src="images/portfolio-item2.jpg" alt />
+            <div class="action">
+              <h3>Description Header Box</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-list">
+            <img src="images/portfolio-item6.jpg" alt />
+            <div class="action">
+              <h3>Profile Card</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, dolor! <br />
+                Click link to see more...
+              </p>
+              <a href="https://github.com/FionaOkezie"
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  style="color: #611b84"
+                ></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Portfolio Page -->
-  <div id="project">
-    <div class="container">
-      <h1 class="sub-heading">Portfolio Project</h1>
-      <div class="project-titles">
-        <p class="project-title active-link" data-tab="html/css">
-          HTML & CSS
-        </p>
-        <p class="project-title" data-tab="javascript">JavaScript</p>
-        <p class="project-title" data-tab="react">React</p>
-      </div>
-      <div class="project-lists active-list" id="html/css">
-        <div class="project-list">
-          <img src="images/portfolio-item4.jpg" alt>
-          <div class="action">
-            <h3>Portfolio Project</h3>
+    <!-- Contact Me -->
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-heading">Contact Me</h1>
+        <div class="row">
+          <div class="contact_left">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
+              <i class="fa-solid fa-envelope-circle-check"></i
+              ><a href="mailto:fiona.okezie@outlook.com">Send an Email!!!</a>
             </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
+            <p>
+              <i class="fa-solid fa-phone-volume"></i
+              ><a href="tel:+17098537281">Call In!!!</a>
+            </p>
+            <div class="socials">
+              <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="http://"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="http://"><i class="fa-brands fa-github-alt"></i></a>
+            </div>
+            <a href="images/Adaugo Fiona Okezie_CV.pdf" download class="button"
+              >Download CV</a
+            >
           </div>
-        </div>
-        <div class="project-list">
-          <img src="images/portfolio-item5.png" alt>
-          <div class="action">
-            <h3>Creative Web Demo</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-        <div class="project-list">
-          <img src="images/portfolio-item3.jpg" alt>
-          <div class="action">
-            <h3>Ecommerce Website</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
+          <div class="contact_right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="button" type="submit">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="project-lists" id="javascript">
-        <div class="project-list">
-          <img src="images/002.png" alt>
-          <div class="action">
-            <h3>Coming Soon</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-        <div class="project-list">
-          <img src="images/002.png" alt>
-          <div class="action">
-            <h3>Coming Soon</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-                <div class="project-list">
-          <img src="images/002.png" alt>
-          <div class="action">
-            <h3>Coming Soon</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="project-lists" id="react">
-        <div class="project-list">
-          <img src="images/portfolio-item1.jpg" alt>
-          <div class="action">
-            <h3>Sign Up Page</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-        <div class="project-list">
-          <img src="images/portfolio-item2.jpg" alt>
-          <div class="action">
-            <h3>Description Header Box</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-                <div class="project-list">
-          <img src="images/portfolio-item6.jpg" alt>
-          <div class="action">
-            <h3>Profile Card</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dolor! <br> Click link to see more...
-            </p>
-            <a href="https://github.com/FionaOkezie"><i class="fa-solid fa-up-right-from-square" style="color: #611b84;"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
