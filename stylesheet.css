@@ -4,6 +4,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #101010;
   color: #fff;
@@ -322,13 +326,14 @@ nav ul li a:hover::after {
 }
 
 .socials a:hover {
-  transform: scaleY(1.3);
-  color: aqua;
+  transform: scaleY(1.1);
+  color: aliceblue;
 }
 button.button {
   border: 0;
   outline: none;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .button {
@@ -360,4 +365,114 @@ form textarea {
   font-size: 18px;
   border-radius: 6px;
   resize: none;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #383838;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.move {
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+  z-index: 20;
+  font-size: 50px;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(images/Fiona\ Okezie.png);
+  }
+  .header-text {
+    margin-top: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .header-text p,
+  .header-text h3 {
+    font-size: 14px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: rgba(103, 33, 96, 0.995);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transform: right;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 35px;
+    letter-spacing: 2px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .col-2 h1 {
+    font-size: 38px;
+  }
+  .col-2,
+  .col-1 {
+    flex-basis: 100%;
+  }
+
+  .col-1 {
+    margin-bottom: 30px;
+  }
+
+  .col-2 p {
+    font-size: 15px;
+  }
+  .tab-titles {
+    margin-top: 30px;
+  }
+
+  .contact_left {
+    flex-basis: 100%;
+  }
+
+  .contact_right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+  .project-title {
+    font-size: 15px;
+  }
+}
+#msg {
+  color: #61b752;
+  margin-top: -20px;
+  display: block;
 }

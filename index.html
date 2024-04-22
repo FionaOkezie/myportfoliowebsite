@@ -16,13 +16,14 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" alt class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Software & Network Engineer</p>
@@ -303,9 +304,9 @@
             >
           </div>
           <div class="contact_right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="email" name="Email" placeholder="Email" required />
               <textarea
                 name="Message"
                 rows="5"
@@ -313,8 +314,15 @@
               ></textarea>
               <button class="button" type="submit">Send Message</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Fiona. Updated April 2024</p>
+      <div class="move">
+        <a href="#header"><i class="fa-solid fa-caret-up"></i></a>
       </div>
     </div>
 
